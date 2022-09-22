@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>需求分许</title>
+    <link href="/2022/09/22/00-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/"/>
+    <url>/2022/09/22/00-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</url>
+    
+    <content type="html"><![CDATA[<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><h4 id="原始需求"><a href="#原始需求" class="headerlink" title="原始需求"></a>原始需求</h4><p>标题：核酸检测查询系统设计与实现</p><ol><li>录入核酸检测的数据（参见核酸检测报告单）。</li><li>查询某身份证人是否做过核酸检测及结果。</li></ol><h4 id="技术要求"><a href="#技术要求" class="headerlink" title="技术要求"></a>技术要求</h4><ol><li>采用 Java、SSM 框架技术</li><li>采用 Web 前端技术</li><li>采用 Python 语言</li></ol><h4 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h4><p>核酸检测查询，主要功能方法：</p><ol><li>录入信息<br>身份证号、姓名、性别、年龄、联系电话；<br>送检单位、送检医生、送检科室、门诊号、区&#x2F;床位、仪器、<br>样本备注、标本类型、采样日期、接收日期；</li><li>查询条件<br>身份证号作为查询条件。<br>省市区镇社区、姓名、年龄等信息，作为模糊查询条件。</li><li>查询结果为<br>检测项目、项目简称、结果、参考区间、检测方法。</li></ol><h4 id="初步分析"><a href="#初步分析" class="headerlink" title="初步分析"></a>初步分析</h4><ol><li>实现基础账号登录注册系统</li></ol><ul><li>登录</li><li>账号操作<ul><li>管理员：crudl、禁用、启用</li><li>普通账号：详情、修改</li></ul></li></ul><ol start="2"><li>录入功能</li></ol><ul><li>核算清单信息crudl</li></ul><ol start="3"><li>核酸结果设置</li></ol><ul><li>设置结果接口</li></ul><ol start="4"><li>统计</li></ol><ul><li>天、周、月、all、核酸人数、</li><li>天、周、月、all、合格率\不合格率和同比</li><li>天、周、月、折线图</li></ul><h4 id="概要设计"><a href="#概要设计" class="headerlink" title="概要设计"></a>概要设计</h4><h4 id="详细设计（数据库设计）"><a href="#详细设计（数据库设计）" class="headerlink" title="详细设计（数据库设计）"></a>详细设计（数据库设计）</h4><ol><li>user表</li></ol><p>id、code、account、accountName、password、avatar、mobile、type、ableFlag、deleteFlag、createdBy、createdTime、updatedBy、updatedTime</p><ol start="2"><li>qat-info表</li></ol><p>id、code、idCard、userName、sex、age、deleteFlag、createdBy、createdTime、updatedBy、updatedTime</p><ol start="3"><li>qat-record表</li></ol><p>id、infoId、province、city、county、address、mobile、examUnit、examDoctor、examDept、clinicNumber、bedNum、instrument、sampleRemark、sampleType、examTime、acceptTime、checkItem、itemAbbreviation、result、interval、examMethod、deleteFlag、createdBy、createdTime、updatedBy、updatedTime</p><h4 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h4><h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><h4 id="交付、验收"><a href="#交付、验收" class="headerlink" title="交付、验收"></a>交付、验收</h4><h4 id="维护"><a href="#维护" class="headerlink" title="维护"></a>维护</h4><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada"><span class="hljs-keyword">select</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title></title>
     <link href="/2022/09/22/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/"/>
     <url>/2022/09/22/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/</url>
