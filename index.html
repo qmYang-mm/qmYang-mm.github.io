@@ -507,5 +507,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+  
+  <style>
+        html {
+          -webkit-filter: grayscale(100%); /* webkit */
+          -moz-filter: grayscale(100%); /*firefox*/
+          -ms-filter: grayscale(100%); /*ie9*/
+          -o-filter: grayscale(100%); /*opera*/
+          filter: grayscale(100%);
+          filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+        }
+        body{
+          filter:gray; /*ie9- */
+          background : none!important;
+        }
+</style>
 </body>
 </html>
